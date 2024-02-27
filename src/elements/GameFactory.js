@@ -15,7 +15,7 @@ const RESET_GAME = '__reset_game__';
 // [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16]
 const generateArray = (num, add) => {
   let puzzle = [...Array(num)].map((_, i) => i + add);
-  puzzle.push(0);
+  // puzzle.push(0);
   return puzzle;
 };
 
@@ -57,11 +57,13 @@ const isSolvable = puzzle => {
 const generatePuzzle = (arr, event) => {
   if (event === NEW_GAME) {
     if (isSolvable(arr)) {
+      arr.push(0);
       return arr;
     } else {
       return generatePuzzle(shuffle(generateArray(15, 1)), NEW_GAME);
     }
   } else {
+    arr.push(0);
     return arr;
   }
 };
@@ -71,7 +73,7 @@ class GameFactory extends Component {
     numbers:
       _event === NEW_GAME
         ? generatePuzzle(shuffle(generateArray(15, num)), _event)
-        : shuffle(generateArray(15, num)),
+        : shuffle(generateArray(15, num)).push(0),
     moves: 0,
     seconds: 0,
     gameState: gameState.GAME_IDLE
