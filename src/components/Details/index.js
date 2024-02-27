@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import { Footer, Profile, Icon } from '@Elements';
 
-const originalName='Shubham Singh'
+const originalName='Shubham Singh';
 const originalGithubURL='https://github.com/imshubhamsingh'
 const originalProjectURL='https://github.com/imshubhamsingh/15-puzzle'
 const originalLinkedinURL='https://linkedin.com/in/imshubhamsingh97/'
