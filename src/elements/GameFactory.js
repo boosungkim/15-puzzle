@@ -73,7 +73,7 @@ class GameFactory extends Component {
     numbers:
       _event === NEW_GAME
         ? generatePuzzle(shuffle(generateArray(15, num)), _event)
-        : shuffle(generateArray(15, num)).push(0),
+        : shuffle(generateArray(15, num)),
     moves: 0,
     seconds: 0,
     gameState: gameState.GAME_IDLE
