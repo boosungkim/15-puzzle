@@ -112,7 +112,7 @@ class GameFactory extends Component {
       );
       if (updated) {
         newState = {
-          number: newNumList,
+          numbers: newNumList,
           moves: prevState.moves + 1
         };
         if (prevState.moves === 0) {
