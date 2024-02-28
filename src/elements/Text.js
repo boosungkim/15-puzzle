@@ -31,8 +31,13 @@ export const HeaderText = styled.div`
   text-align: center;
   span {
     font-size: 85px;
+    margin-bottom: -10px; // Reduce space below the span
+    display: block; // Ensure this takes effect correctly
   }
-
+  p {
+    font-size: 24px; // Assuming you're keeping this adjustment
+    margin-top: 0px; // Reduce space above the p tag
+  }
   background: url(${Waves}) repeat 0 0;
   width: 100%;
   text-align: center;
@@ -45,5 +50,11 @@ export const HeaderText = styled.div`
     span {
       font-size: 58px;
     }
+    p {
+      font-size: 20px; // Adjust for smaller screens if necessary
+      margin-top: 0px; // Adjust for smaller screens
+    }
   }
+
 `;
+

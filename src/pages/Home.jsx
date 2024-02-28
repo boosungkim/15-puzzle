@@ -22,12 +22,13 @@ const Home = ({ eventType }) => {
                 <Wave className="waves" src={Waves} alt="" />
               </div>
               <br />
+              <br />
               <Details
-                name={'Shubham Singh'}
-                githubURL={'https://github.com/imshubhamsingh'}
-                projectURL={'https://github.com/imshubhamsingh/15-puzzle'}
-                linkedinURL={'https://linkedin.com/in/imshubhamsingh97/'}
-                twitterURL={'https://twitter.com/imshubhamsingh_'}
+                name={'Boosung Kim'}
+                githubURL={'https://github.com/boosungkim'}
+                projectURL={'https://github.com/boosungkim/15-puzzle'}
+                linkedinURL={'https://linkedin.com/in/boosungk/'}
+                twitterURL={'https://twitter.com/bytesofboosung'}
               />
             </Fragment>
           );
